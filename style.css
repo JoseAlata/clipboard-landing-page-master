@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+/*  */
+
+:root {
+  --Strong-Cyan: #26baa4;
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+.header__logo {
+  max-width: 125px;
+  margin: 128px 0 38.9px 0;
+}
+.header__title {
+  margin-bottom: 4px;
+  font-size: 4.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--Dark-Grayish-Blue);
+}
+.header__description {
+  max-width: 35em;
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--Grayish-Blue);
+}
+
+.botones {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6em;
+  justify-content: center;
+}
+.btn {
+  width: 11.35em;
+  height: 2.8em;
+  border-radius: 50px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-azul {
+  background: var(--Light-Blue);
+  border-right: 1px solid hsl(233, 100%, 65%);
+  border-left: 1px solid hsl(233, 100%, 65%);
+  border-bottom: 3px solid hsl(233, 100%, 65%);
+  box-shadow: 0px 7px 5px 1px rgba(77, 97, 255, 0.21);
+  -webkit-box-shadow: 0px 7px 5px 1px rgba(77, 97, 255, 0.21);
+  -moz-box-shadow: 0px 7px 5px 1px rgba(77, 97, 255, 0.21);
+}
+.btn-verde {
+  background: var(--Strong-Cyan);
+  border-right: 1px solid #2f9681;
+  border-left: 1px solid #2f9681;
+  border-bottom: 3px solid #2f9681;
+  box-shadow: 0px 7px 5px 1px rgba(47, 150, 129, 0.1);
+  -webkit-box-shadow: 0px 7px 5px 1px rgba(47, 150, 129, 0.1);
+  -moz-box-shadow: 0px 7px 5px 1px rgba(47, 150, 129, 0.1);
+}
+.subtitle {
+  margin-top: 160px;
+  margin-bottom: 12px;
+  font-size: 3.6rem;
+  text-align: center;
+  color: var(--Dark-Grayish-Blue);
+}
+.subtitle__description {
+  max-width: 38em;
+  margin-bottom: 70px;
+  font-size: 1.9rem;
+  text-align: center;
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.details-caracters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.caracters {
+  width: 48vw;
+  padding-left: 111px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.caracter__title {
+  margin: 0;
+  font-size: 2.6rem;
+  color: var(--Dark-Grayish-Blue);
+}
+.caracter__description {
+  max-width: 22em;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--Grayish-Blue);
+}
+.mg-60 {
+  margin-top: 60px;
+}
+.details {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+  gap: 25px;
+}
+.details__title {
+  font-size: 2.6rem;
+  color: var(--Dark-Grayish-Blue);
+}
+.details__description {
+  max-width: 22em;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--Grayish-Blue);
+}
+
+.marcas {
+  margin-top: 142px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.marcas__logo {
+  height: 40px;
+}
+footer {
+  width: 100%;
+  min-height: 149px;
+  margin-top: 148px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #f5f6f8;
+}
+.footer__logo {
+  width: 55px;
+  height: 55px;
+  margin-right: 135px;
+
+  align-self: center;
+}
+.links {
+  display: grid;
+  margin-right: 316px;
+
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+.links a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: var(--Grayish-Blue);
+}
+.links a:hover {
+  color: var(--Strong-Cyan);
+}
+.icons-socials {
+  display: flex;
+  gap: 10px;
+}
+.icons {
+  cursor: pointer;
+}
+.icons:hover {
+  filter: invert(53%) sepia(91%) saturate(362%) hue-rotate(122deg)
+    brightness(96%) contrast(86%);
+}
+@media screen AND (max-width: 1115px) {
+  .details-caracters {
+    justify-content: center;
+  }
+  .img-computer {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .caracters {
+    padding: 0;
+    text-align: center;
+  }
+  .img-devices {
+    width: 80%;
+  }
+  footer {
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer__logo {
+    margin: 0;
+  }
+  .links {
+    margin: 0;
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  .details {
+    flex-direction: column;
+  }
+}
